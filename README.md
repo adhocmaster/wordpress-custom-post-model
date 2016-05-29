@@ -13,6 +13,9 @@ Model does all the queries and manipulation based on your post-type. So, to star
 
 ```PHP
 
+require_once "path-to/class-adhocmaster-model.php";
+
+// Your custom class
 class Crowd_Fundraiser_Campaign extends Adhocmaster_Model {
 
 
@@ -31,7 +34,7 @@ class Crowd_Fundraiser_Campaign extends Adhocmaster_Model {
 
 ### Usage
 
-Now you can use your new class like this
+Now you can use your new class like this anywhere.
 
 #### Creating & storing a new item
 
