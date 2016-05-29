@@ -22,7 +22,7 @@ Model does all the queries and manipulation based on your post-type. So, to star
 require_once "path-to/class-adhocmaster-model.php";
 
 // Your custom class
-class Crowd_Fundraiser_Campaign extends Adhocmaster_Model {
+class My_Class extends Adhocmaster_Model {
 
 
 	/**
@@ -32,7 +32,7 @@ class Crowd_Fundraiser_Campaign extends Adhocmaster_Model {
 	 * @access   public
 	 */
 
-	const POST_TYPE = "campaign";
+	const POST_TYPE = "my_entity";
 
 }
 
@@ -46,7 +46,7 @@ Now you can use your new class like this anywhere.
 
 ```PHP
 
-$obj = new Crowd_Fundraiser_Campaign();
+$obj = new My_Class();
 
 // A Dynamic property which will be saved as post meta data
 $obj->my_new_property = "Hello World"; 
@@ -68,7 +68,7 @@ When you retrive an item, it pulls all the data from post table and also meta ta
 
 ```PHP
 
-$obj = new Crowd_Fundraiser_Campaign( $post_id );
+$obj = new My_Class( $post_id );
 
 echo $obj->my_new_property; // outputs data saved in "my_new_property" meta 
 echo $obj->post_author;     // outputs data saved in post_author field in post table
