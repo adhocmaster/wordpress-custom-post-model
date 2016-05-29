@@ -1,5 +1,11 @@
-# wordpress-custom-post-model
-A eloquent class that helps you to create new data models using wordpress custom post types
+# Wordpress Custom Post Model
+
+A eloquent class that helps you to create new data models using wordpress custom post types. Benefits of using this class
+
+* You make custom wordpress plugins using wordpress post table. You mostly don't need to create new tables. This is wordpress recommendation. Whenever you need a new entity start thinking of a new custom post type. It can be a car, an account, a date, etc.
+* Wordpress post table has indices on several fields which are good enough for most common searches.
+* This class does the basic operations and field mappings quite easy. You can setup your custom post ORM in a few minutes. 
+* This class handles dynamic properties well. You can save properties *WITHOUT* even defining them! Feels like a schema-less table.
 
 ## minimal Example
 
@@ -70,6 +76,15 @@ echo $obj->post_author;     // outputs data saved in post_author field in post t
 ````
 
 ## Advanced Example
+
+## Contribution Needed
+
+This Wordpress ORM class needs a lot of contribution. Interested people just start a issue thread with discussion as I fail to check emails. Several aspect I am looking for
+
+1. Search and Get functions
+2. **Enttity relation mappings** ( like say one type has multiple other types )
+3. Data export
+4. Data and relation visualization (core wordpress management tools are not enough)
 
 
 
